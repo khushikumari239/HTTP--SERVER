@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 app.listen(3000);
 Important Note:
 Make sure to add this in your package.json
-![alt text](image-1.png)
+![alt text](image-4.png)
 "type": "module"
 Or else Node will yell at you with errors 😂
 
