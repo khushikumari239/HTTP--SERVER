@@ -5,24 +5,20 @@ Nothing fancy, just me figuring things out and trying to make things work. Here�
 Steps I Followed
 1. Init the Project
 I started by running this in my folder terminal:
-
-bash
-Copy code
 npm init -y
+
 It created a package.json file for me (just like that 🚀).
 
 2. Installed Express
-bash
-Copy code
+
 npm install express
+
 This dropped a whole node_modules folder and a package-lock.json (yeah, Express and all the other magic is sitting there now).
 
 If you wanna start quickly, Express has a boilerplate right here:
 https://www.npmjs.com/package/express
 
-My Starter Code
-js
-Copy code
+My Starter Code : - ![alt text](image-2.png)
 // index.js
 import express from 'express';
 
@@ -35,9 +31,7 @@ app.get('/', (req, res) => {
 app.listen(3000);
 Important Note:
 Make sure to add this in your package.json
-
-json
-Copy code
+![alt text](image-1.png)
 "type": "module"
 Or else Node will yell at you with errors 😂
 
@@ -47,23 +41,18 @@ Wanna know why? It’s because it's an HTTP Server — it keeps listening for in
 (Yeah, I asked ChatGPT this 🤝)
 
 Playing with Postman 🛠️
-I also used Postman (which I just learned recently 😎) to hit this URL:
-
-text
-Copy code
+I also used Postman (which I just learned recently 😎) to hit this URL: - 
 http://localhost:3000/
 Method: GET
 
 Boom — it showed me:
 
-text
-Copy code
 Hello World
-Little Explanation:
-js
-Copy code
+Little Explanation: - 
 app.get('/', (req, res) => {
     // req: Request data (like query params, body, etc.)
     // res: How you send back your response (text, HTML, anything)
     res.send('<b>Hi Khushi</b>');
 });
+
+![alt text](image-3.png)
